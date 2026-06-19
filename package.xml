@@ -4,7 +4,7 @@
   <name>so101_description</name>
   <version>0.0.0</version>
   <description>so101_robot_description</description>
-  <maintainer email="yongquan6993@gmail.com">jazzy</maintainer>
+  <maintainer email="yongquan6993@gmail.com">Yong</maintainer>
   <license>Apache-2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
@@ -12,6 +12,7 @@
   <depend>urdf</depend>
   <depend>xacro</depend>
   <depend>robot_state_publisher</depend>
+  <depend>joint_state_publisher_gui</depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
