@@ -12,7 +12,7 @@ Clone into your workspace `src` folder and build with `colcon`:
 
 ```bash
 cd ~/ros2_ws/src
-git clone <your-repo-url> so101_description
+git clone https://github.com/YongQuanz/so101_description.git
 cd ~/ros2_ws
 colcon build --packages-select so101_description
 source install/setup.bash
@@ -62,7 +62,8 @@ This will:
 
 ## Source
 
-The URDF and meshes were taken from: https://github.com/TheRobotStudio/SO-ARM100/blob/main/Simulation/SO101/so101_new_calib.urdf
+The URDF and meshes were taken from:
+https://github.com/TheRobotStudio/SO-ARM100/blob/main/Simulation/SO101/so101_new_calib.urdf
 
 ## License
 
