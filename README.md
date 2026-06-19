@@ -6,6 +6,17 @@ files for the **SO-101** robotic arm.
 This package currently provides robot visualization only (RViz + joint state
 publishing).
 
+## Build
+
+Clone into your workspace `src` folder and build with `colcon`:
+
+```bash
+cd ~/ros2_ws/src
+git clone <your-repo-url> so101_description
+cd ~/ros2_ws
+colcon build --packages-select so101_description
+source install/setup.bash
+```
 Install missing dependencies with `rosdep` (run from the root of your workspace):
 
 ```bash
@@ -18,18 +29,6 @@ rosdep install --from-paths src --ignore-src -r -y
 This reads the `<depend>` tags in `package.xml` and installs everything
 needed (`joint_state_publisher_gui`, `robot_state_publisher`, `rviz2`,
 `xacro`, etc.) automatically.
-
-## Build
-
-Clone into your workspace `src` folder and build with `colcon`:
-
-```bash
-cd ~/ros2_ws/src
-git clone <your-repo-url> so101_description
-cd ~/ros2_ws
-colcon build --packages-select so101_description
-source install/setup.bash
-```
 
 ## Usage
 
@@ -63,16 +62,7 @@ This will:
 
 ## Source
 
-The URDF and meshes were generated from the original SO-101 CAD model using
-[`onshape-to-robot`](https://github.com/Rhoban/onshape-to-robot):
-
-[Onshape CAD source](https://cad.onshape.com/documents/7715cc284bb430fe6dab4ffd/w/4fd0791b683777b02f8d975a/e/826c553ede3b7592eb9ca800)
-
-## Roadmap
-
-- [ ] `ros2_control` hardware interface for the STS3215 servos
-- [ ] MoveIt 2 motion planning configuration
-- [ ] Gazebo simulation support
+The URDF and meshes were taken from: https://github.com/TheRobotStudio/SO-ARM100/blob/main/Simulation/SO101/so101_new_calib.urdf
 
 ## License
 
