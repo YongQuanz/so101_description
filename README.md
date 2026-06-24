@@ -64,7 +64,3 @@ This will:
 
 The URDF and meshes were taken from:
 https://github.com/TheRobotStudio/SO-ARM100/blob/main/Simulation/SO101/so101_new_calib.urdf
-
-## License
-
-Licensed under the [Apache License 2.0](LICENSE).
